@@ -10,28 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
 
-  <!-- CSS mínimo para nuevos elementos (no afecta tus estilos actuales) -->
+  <!-- CSS mínimo para nuevos elementos (no choca con tu style.css) -->
   <style>
-    <!-- GALERÍA AÑADIDA PARA COMBO CLÁSICO (usando los nombres exactos codificados) -->
-<div class="combo-galeria">
-  <!-- HAMBURGUESA -->
-  <figure class="combo-item">
-    <img
-      src="assets/ChatGPT%20Image%2020%20oct%202025%2C%2005_40_18%20p.m..png?v=3"
-      alt="Hamburguesa clásica"
-      loading="lazy">
-    <figcaption>Hamburguesa clásica</figcaption>
-  </figure>
-
-  <!-- PAPAS CON CHIMICHURRI -->
-  <figure class="combo-item">
-    <img
-      src="assets/ChatGPT%20Image%2020%20oct%202025%2C%2005_40_15%20p.m..png?v=3"
-      alt="Papas artesanales con chimichurri"
-      loading="lazy">
-    <figcaption>Papas artesanales con chimichurri</figcaption>
-  </figure>
-</div>
+    /* Galería para Combo Clásico */
+    .combo-galeria{
+      display:grid; gap:16px;
+      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+      margin-top:16px;
+    }
+    .combo-item img{
+      width:100%; height:260px; object-fit:cover;
+      border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,.08);
+    }
+    .combo-item figcaption{ text-align:center; margin-top:8px; font-weight:600; }
 
     /* Botones sociales con iconos (Contacto) */
     .cta__actions{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:center; }
@@ -145,19 +136,25 @@
                 <span class="pill">Precio sugerido: $160</span>
               </div>
 
-              <!-- GALERÍA AÑADIDA PARA COMBO CLÁSICO (usando los PNG que subiste en /assets/) -->
-              <!-- GALERÍA AÑADIDA PARA COMBO CLÁSICO (nombres simples) -->
-<div class="combo-galeria">
-  <figure class="combo-item">
-    <img src="assets/hamburguesa-clasica.png?v=2" alt="Hamburguesa clásica" loading="lazy">
-    <figcaption>Hamburguesa clásica</figcaption>
-  </figure>
-  <figure class="combo-item">
-    <img src="assets/papas-chimichurri.png?v=2" alt="Papas artesanales con chimichurri" loading="lazy">
-    <figcaption>Papas artesanales con chimichurri</figcaption>
-  </figure>
-</div>
-
+              <!-- GALERÍA AÑADIDA PARA COMBO CLÁSICO (usando tus 2 PNG en /assets/) -->
+              <div class="combo-galeria">
+                <!-- HAMBURGUESA -->
+                <figure class="combo-item">
+                  <img
+                    src="assets/ChatGPT%20Image%2020%20oct%202025%2C%2005_40_18%20p.m..png?v=5"
+                    alt="Hamburguesa clásica"
+                    loading="lazy">
+                  <figcaption>Hamburguesa clásica</figcaption>
+                </figure>
+                <!-- PAPAS CON CHIMICHURRI -->
+                <figure class="combo-item">
+                  <img
+                    src="assets/ChatGPT%20Image%2020%20oct%202025%2C%2005_40_15%20p.m..png?v=5"
+                    alt="Papas artesanales con chimichurri"
+                    loading="lazy">
+                  <figcaption>Papas artesanales con chimichurri</figcaption>
+                </figure>
+              </div>
               <!-- FIN GALERÍA -->
             </div>
           </article>
