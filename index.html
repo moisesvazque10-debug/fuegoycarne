@@ -10,9 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
 
-  <!-- CSS mínimo para nuevos elementos (no choca con tu style.css) -->
+  <!-- CSS mínimo para nuevos elementos (extra) -->
   <style>
-    /* Galería para Combo Clásico */
     .combo-galeria{
       display:grid; gap:16px;
       grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
@@ -24,7 +23,6 @@
     }
     .combo-item figcaption{ text-align:center; margin-top:8px; font-weight:600; }
 
-    /* Botones sociales con iconos (Contacto) */
     .cta__actions{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:center; }
     .btn-social{
       display:inline-flex; align-items:center; gap:8px;
@@ -50,7 +48,6 @@
         <li><a href="#menu">Menú</a></li>
         <li><a href="#eco">Eco</a></li>
         <li><a href="#objetivos">Objetivos</a></li>
-        <!-- REMOVIDO: <li><a href="#foda">FODA</a></li> -->
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -136,14 +133,14 @@
                 <span class="pill">Precio sugerido: $160</span>
               </div>
 
-              <!-- GALERÍA AÑADIDA PARA COMBO CLÁSICO (nombres simples en /assets/) -->
+              <!-- GALERÍA (usa las imágenes .png.png que sí cargan) -->
               <div class="combo-galeria">
                 <figure class="combo-item">
-                  <img src="assets/hamburguesa-clasica.png?v=7" alt="Hamburguesa clásica" loading="lazy">
+                  <img src="assets/hamburguesa-clasica.png.png?v=12" alt="Hamburguesa clásica" loading="lazy">
                   <figcaption>Hamburguesa clásica</figcaption>
                 </figure>
                 <figure class="combo-item">
-                  <img src="assets/papas-chimichurri.png?v=7" alt="Papas artesanales con chimichurri" loading="lazy">
+                  <img src="assets/papas-chimichurri.png.png?v=12" alt="Papas artesanales con chimichurri" loading="lazy">
                   <figcaption>Papas artesanales con chimichurri</figcaption>
                 </figure>
               </div>
@@ -217,51 +214,6 @@
       </div>
     </section>
 
-    <!-- SECCIÓN FODA REMOVIDA -->
-
     <section id="contacto" class="section section--cta">
       <div class="container cta">
-        <h2 class="section__title">¿Listo para ordenar?</h2>
-        <p>Haz tu pedido por apps o escríbenos. Muy pronto activaremos el pedido en línea.</p>
-
-        <!-- Botones sociales con iconos SVG -->
-        <div class="cta__actions">
-          <!-- Instagram -->
-          <a class="btn-social instagram"
-             href="https://www.instagram.com/fuego_y_carne_/"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Instagram">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
-            </svg>
-            <span>Instagram</span>
-          </a>
-
-          <!-- Facebook -->
-          <a class="btn-social facebook"
-             href="https://www.facebook.com/profile.php?id=61582353028645"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Facebook">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-              <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.2 10.44 22v-7.03H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22C18.34 21.2 22 17.08 22 12.06z"/>
-            </svg>
-            <span>Facebook</span>
-          </a>
-        </div>
-
-        <div class="contact__meta"><p>📍 León, Guanajuato · 📧 fuegoycarne@gmail.com</p></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer__grid">
-      <div><strong>Fuego & Carne</strong><p class="muted">Hamburguesas artesanales al carbón · Empaque biodegradable</p></div>
-      <div class="footer__links"><a href="#historia">Historia</a><a href="#menu">Menú</a><a href="#eco">Eco</a><a href="#objetivos">Objetivos</a></div>
-    </div>
-    <p class="copyright">© 2025 Fuego & Carne. Todos los derechos reservados.</p>
-  </footer>
-
-  <script src="assets/script.js" defer></script>
-</body>
-</html>
+        <h2 class="section__title
